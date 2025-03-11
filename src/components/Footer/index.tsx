@@ -42,7 +42,7 @@ const Footer = () => {
       <div className="w-full flex flex-col md:gap-10 gap-3">
         <div className="w-full h-[1px] bg-footer-line"></div>
         <div className="w-full text-center text-secondary">
-          Copyright Markethink. All right reserved
+          made with ✨ by <a href="https://github.com/tharun30115">tharun</a>
         </div>
       </div>
     </div>
