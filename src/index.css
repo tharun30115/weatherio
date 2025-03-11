@@ -1,22 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-	font-family: "Montserrat Alternates", sans-serif;
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	display: grid;
-	place-items: center;
-	background-color: #e5e5e5;
-	overflow-x: hidden !important;
+@theme {
+  --color-background: #ffffff;
+  --color-primary: #253d32;
+  --color-secondary: #78847d;
+  --color-link: #a3b938;
+  --color-logo: #a2bdaa;
+  --color-btn-gradient-start: #cce457;
+  --color-btn-gradient-end: #98aa28;
+  --color-btn-border: rgba(237, 255, 129, 0.4);
+  --color-hero-text: #d4d9d7;
+  --color-light-box: #f6fbf9;
+  --color-blog-desc: #808371;
+  --color-footer-line: rgba(20, 24, 62, 0.15);
 }
 
-* {
-	box-sizing: border-box !important;
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
+  color: white;
+}
+.custom-line {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-line::after {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./assets/images/line.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
